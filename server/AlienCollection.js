@@ -1,4 +1,4 @@
-const simpleSchema = new SimpleSchema({
+const alienSimpleSchema = new SimpleSchema({
   age: {
     type: Number,
   },
@@ -17,11 +17,11 @@ class AlienCollection extends Mongo.Collection
 
 }
 
-const collection = new AlienCollection('aliens')
+const alienCollection = new AlienCollection('aliens')
 
-collection.attachSchema(simpleSchema)
+alienCollection.attachSchema(alienSimpleSchema)
 
 export {
-  simpleSchema,
-  collection,
+  alienSimpleSchema,
+  alienCollection,
 }
